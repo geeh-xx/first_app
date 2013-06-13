@@ -7,8 +7,12 @@ class WelcomeController < ApplicationController
 
 	def black
 	#	render :layout => 'application_black'
-	end
+end
 
-	def only
-	end
+def contact
+end
+
+def about
+end
+
 end

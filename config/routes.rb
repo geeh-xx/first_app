@@ -48,8 +48,10 @@ FirstApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'welcome#index'
-   match 'black' => 'welcome#black',:via => :get , :ass => :black
+   root :to => 'welcome#index', :as => :index
+   match 'about' => 'welcome#about',:as => :about
+   match 'black' => 'welcome#black',:via => :get , :as => :black
+   match 'contact' => 'welcome#contact', :as => :contact
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
