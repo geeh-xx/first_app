@@ -6,17 +6,9 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body style="background-color:black;">
 
-	<%= render :partial => 'shared/menu_top' %>
-	<div class="container-fluid">
-		<div class="row-fluid">	
-			<%= yield :sidebar %>
-			<%= yield %>
-		</div>
-		<%= render :partial => 'shared/footer' %>
-	</div>
-
+<%= yield %>
 
 </body>
 </html>
