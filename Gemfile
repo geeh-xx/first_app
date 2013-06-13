@@ -19,6 +19,10 @@ group :production do
 
 end
 
+group :test	do
+	gem 'capybara'
+	gem 'rspec-rails'
+end
 
 
 # Gems used only for assets and not required
